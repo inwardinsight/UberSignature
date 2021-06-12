@@ -22,7 +22,7 @@
 
 import UIKit
 
-public protocol SignatureDrawingViewControllerDelegate: class {
+public protocol SignatureDrawingViewControllerDelegate: AnyObject {
     /// Callback when isEmpty changes, due to user drawing or reset() being called.
     func signatureDrawingViewControllerIsEmptyDidChange(controller: SignatureDrawingViewController, isEmpty: Bool)
 }

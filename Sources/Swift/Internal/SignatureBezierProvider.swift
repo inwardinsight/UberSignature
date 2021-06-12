@@ -22,7 +22,7 @@
 
 import UIKit
 
-protocol SignatureBezierProviderDelegate: class {
+protocol SignatureBezierProviderDelegate: AnyObject {
     /**
      Provides the temporary signature bezier.
      This can be displayed to represent the most recent points of the signature,
